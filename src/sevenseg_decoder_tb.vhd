@@ -63,8 +63,33 @@ w_i_Hex <= x"2"; wait for 10 ns;
     assert w_o_seg_n = "0100100" report "error on x2" severity failure;
 w_i_Hex <= x"3"; wait for 10 ns;
     assert w_o_seg_n = "0110000" report "error on x3" severity failure;  
+w_i_Hex <= x"4"; wait for 10 ns;
+    assert w_o_seg_n = "0011001" report "error on x4" severity failure;
+w_i_Hex <= x"5"; wait for 10 ns;
+    assert w_o_seg_n = "0010010" report "error on x5" severity failure;
+w_i_Hex <= x"6"; wait for 10 ns;
+    assert w_o_seg_n = "0000010" report "error on x6" severity failure;
+w_i_Hex <= x"7"; wait for 10 ns;
+    assert w_o_seg_n = "1111000" report "error on x7" severity failure;
+w_i_Hex <= x"8"; wait for 10 ns;
+    assert w_o_seg_n = "0000000" report "error on x8" severity failure;
+w_i_Hex <= x"9"; wait for 10 ns;
+    assert w_o_seg_n = "0011000" report "error on x9" severity failure;
+w_i_Hex <= x"A"; wait for 10 ns;
+    assert w_o_seg_n = "0001000" report "error on xA" severity failure;
+w_i_Hex <= x"B"; wait for 10 ns;
+    assert w_o_seg_n = "0000011" report "error on xB" severity failure;
+w_i_Hex <= x"C"; wait for 10 ns;
+    assert w_o_seg_n = "0100111" report "error on xC" severity failure;
+w_i_Hex <= x"D"; wait for 10 ns;
+    assert w_o_seg_n = "0100001" report "error on xD" severity failure;
+w_i_Hex <= x"E"; wait for 10 ns;
+    assert w_o_seg_n = "0000110" report "error on xE" severity failure;
+w_i_Hex <= x"F"; wait for 10 ns;
+    assert w_o_seg_n = "0001110" report "error on xF" severity failure;
+
     
 wait;
-
+end process;
 
 end Behavioral;
